@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html style = "font-size: 16%;">
+<head>
+    <meta charset = "UTF-8">
+    <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <meta name = "keywords" content = "js">
+    <meta name = "Name" content = "Rham Benedict C. Calpotura">
+    <meta name = "page_type" content = "np-template-header-footer-form-plugin">
+    <title>Exercise 15</title>
+
+</head>
+<body>
+    <td>
+        <div class = "contain" style = "padding: 50px;">
+            <h1 id = "1"></h1>
+            <h2 id = "2"></h2>
+            <form>
+                <beside > First Name </beside> 
+                <input id = "First Name" size = "100px" placeholder = "First Name"></input>
+            </form>
+
+            <br>
+
+            <form>
+                <beside > Age </beside>
+                <input id = "Age" size = "106px" placeholder = "Age"></input>
+            </form>
+
+            <h2 id = "3"></h2>
+            <form>
+                <beside > Phone Number </beside>
+                <input id = "Phone Number" size = "100px" placeholder = "Phone Number"></input>
+            </form>
+
+            <br>
+
+            <form>
+                <beside > Email Address </beside>
+                <input id = "Email Address" size = "100px" placeholder = "Email Address"></input>
+            </form>
+
+            <br>
+
+            <form>
+                <beside > Mailing Address </beside>
+                <input id = "Mailing Address" size = "100px" placeholder = "Mailing Address"></input>
+            </form>
+            
+            <h2 id = "4"></h2>
+            <form>
+                <beside > Program </beside>
+                <input id = "Program" size = "100px" placeholder = "Program"></input>
+            </form>
+
+            <br>
+
+            <form>
+                <beside > ID Number </beside>
+                <input id = "ID Number" size = "100px" placeholder = "ID Number"></input>
+            </form>
+
+            <br>
+
+            <form>
+                <beside > Year Level </beside>
+                <input id = "Year Level" size = "100px" placeholder = "Year Level"></input>
+            </form>
+
+            <br>
+
+            <form>
+                <beside > Section </beside>
+                <input id = "Section" size = "100px" placeholder = "Section"></input>
+            </form>
+
+        <br>
+        <hr>
+
+        </div>
+
+            <script type = "text/javascript" src = "Exercise 15.js">
+                function validateForm(){
+                    var x = document.forms["myForm"]["fname"].value;
+                if(x == ""){
+                    alert("Name must be filled out");
+                    return false;
+                }
+                }
+            </script>
+            <form name = "myForm" action = "/action_page_post.php"
+            onsubmit = "returnvalidateForm()" method = "post">
+            <input type = "submit" id = "alert">
+            </form>
+        </align>
+    </td>
+    
+</body>
+</html>
